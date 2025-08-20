@@ -7,9 +7,9 @@ const App = () => {
 
 
    const tabsData = [
-    { title: "Tab1", content: <p>This is the content for Tab1</p> },
-    { title: "Tab2", content: <p>This is the content for Tab2</p> },
-    { title: "Tab3", content: <p>This is the content for Tab3</p> },
+    { title: "Tab1", content: "This is the content for Tab1." },
+    { title: "Tab2", content: "This is the content for Tab2." },
+    { title: "Tab3", content: "This is the content for Tab3." },
   ];
   return (
     <div>
