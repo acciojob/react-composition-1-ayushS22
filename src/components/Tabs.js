@@ -7,12 +7,14 @@ function Tabs({ tabs }) {
     <div>
       {/* Tab titles */}
       <div >
-        {tabs.map((tab, index) => <li key={index}><button style= {{border:"none",background:"none",fontSize:"16px"}} onClick={() => setActiveIndex(index)} >
+        <ul>
+        {tabs.map((tab, index) => (<li key={index}><button style= {{border:"none",background:"none",fontSize:"16px"}} onClick={() => setActiveIndex(index)} >
             {tab.title}
           </button>
           </li>  
           
-        )}
+        ))}
+        </ul>
       </div>
 
       {/* Active tab content show kro yaha */}
