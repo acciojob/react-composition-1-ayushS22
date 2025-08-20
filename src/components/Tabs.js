@@ -27,7 +27,7 @@ function Tabs({ tabs }) {
      
 
       {/* Active tab content show kro yaha */}
-        <p>{tabs[activeIndex].content}</p>
+        {tabs[activeIndex].content}
      
     </div>
   );
