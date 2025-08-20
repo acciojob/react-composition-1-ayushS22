@@ -6,7 +6,7 @@ function Tabs({ tabs }) {
   return (
     <div>
       {/* Tab titles */}
-      <div>
+      
         <ul>
           {tabs.map((tab, index) => (
             <li key={index}>
@@ -24,12 +24,11 @@ function Tabs({ tabs }) {
             </li>
           ))}
         </ul>
-      </div>
+     
 
       {/* Active tab content show kro yaha */}
-      <div style={{ paddingLeft: "10px", fontSize: "18px" }}>
         <p>{tabs[activeIndex].content}</p>
-      </div>
+     
     </div>
   );
 }
