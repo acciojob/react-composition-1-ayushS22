@@ -7,11 +7,11 @@ function Tabs({ tabs }) {
     <div>
       {/* Tab titles */}
       <div >
-        {tabs.map((tab, index) => <ul><li key={index}><button style= {{border:"none",background:"none",fontSize:"16px"}}onClick={() => setActiveIndex(index)} >
+        {tabs.map((tab, index) => <li key={index}><button style= {{border:"none",background:"none",fontSize:"16px"}} onClick={() => setActiveIndex(index)} >
             {tab.title}
           </button>
           </li>  
-          </ul>
+          
         )}
       </div>
 
