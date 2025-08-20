@@ -6,27 +6,20 @@ function Tabs({ tabs }) {
   return (
     <div>
       {/* Tab titles */}
-      <div>
-        <ul>
-          {tabs.map((tab, index) => (
-            <li key={index}>
-              <button
-                style={{
-                  border: "none",
-                  background: "none",
-                  fontSize: "16px",
-                  cursor: "pointer",
-                }}
-                onClick={() => setActiveIndex(index)}
-              >
-                {tab.title}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul>
+        {tabs.map((tab, index) => (
+          <li key={index}>
+            <button
+              style={{ border: "none", background: "none", fontSize: "16px" }}
+              onClick={() => setActiveIndex(index)}
+            >
+              {tab.title}
+            </button>
+          </li>
+        ))}
+      </ul>
 
-      {/* Active tab content show kro yaha */}
+      {/* Active tab content */}
       <div style={{ paddingLeft: "10px", fontSize: "18px" }}>
         {tabs[activeIndex].content}
       </div>
